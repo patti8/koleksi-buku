@@ -5,17 +5,17 @@
 - ~~Berikan validasi untuk memastikan bahwa username dan email tidak boleh
 kosong, dan email harus memiliki format yang valid.~~
 
-### Hubungan Model:
-- Buatlah dua model, Author dan Book, dengan relasi one-to-many. Seorang
+### ~~Hubungan Model~~:
+- ~~Buatlah dua model, Author dan Book, dengan relasi one-to-many. Seorang
 penulis dapat memiliki banyak buku, tetapi setiap buku hanya memiliki satu
-penulis.
-- Implementasikan relasi ini dengan benar dalam model dan database.
+penulis.~~
+- ~~Implementasikan relasi ini dengan benar dalam model dan database.~~
 
 ### Controller dan View:
-- Buatlah sebuah kontroler untuk menampilkan daftar buku. Implementasikan
+- ~~Buatlah sebuah kontroler untuk menampilkan daftar buku. Implementasikan
 tindakan (action) yang memungkinkan pengguna melihat daftar buku yang
-ada.
-- Lalu, buat tampilan (view) yang menampilkan daftar buku dalam format tabel.
+ada.~~
+- ~~Lalu, buat tampilan (view) yang menampilkan daftar buku dalam format tabel~~
 
 ### Form Handling:
 - Buatlah sebuah form untuk membuat buku baru. Form ini harus memiliki field
