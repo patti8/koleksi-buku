@@ -45,7 +45,7 @@ tertentu hanya untuk pengguna yang sudah login.
 implementasikan pagination untuk membaginya ke beberapa halaman.
 
 ### API Endpoint:
-- Buatlah sebuah API endpoint yang memungkinkan pengguna untuk melihat
+- ~~Buatlah sebuah API endpoint yang memungkinkan pengguna untuk melihat
 daftar buku dalam format JSON. Endpoint ini harus memberikan respons
-dengan data buku yang sesuai.
+dengan data buku yang sesuai.~~
 
