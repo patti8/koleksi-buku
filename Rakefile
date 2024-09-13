@@ -3,6 +3,5 @@
 
 require_relative "config/application"
 
-Books::API.compile!
-run Books::API
+
 Rails.application.load_tasks

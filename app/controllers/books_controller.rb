@@ -1,11 +1,11 @@
 class BooksController < ApplicationController
 
   def index
-    @books = Book.all
+    @books = Book.paginate(page: params[:page], per_page: 8)
   end
 
   def create
-
+    render json: "yeay"
   end
 
   private

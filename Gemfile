@@ -71,3 +71,7 @@ gem "tailwindcss-rails", "~> 2.7"
 gem "faker", "~> 3.4"
 
 gem "grape", "~> 2.1"
+
+gem "will_paginate", "~> 4.0"
+
+gem "devise", "~> 4.9"

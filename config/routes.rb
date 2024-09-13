@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   get '/', to: 'books#index'
-  post '/add_book', to: 'books#create'
+  post '/add_book', to: 'books#create', defaults: {format: :json}
 
 end

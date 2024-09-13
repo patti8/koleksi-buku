@@ -40,12 +40,11 @@ tersebut.
 buatlah filter atau tindakan dalam kontroler yang membatasi akses ke tindakan
 tertentu hanya untuk pengguna yang sudah login.
 
-### Pagination:
-- Jika daftar buku dalam halaman daftar buku menjadi terlalu panjang,
-implementasikan pagination untuk membaginya ke beberapa halaman.
+### ~~Pagination:~~
+- ~~Jika daftar buku dalam halaman daftar buku menjadi terlalu panjang, implementasikan pagination untuk membaginya ke beberapa halaman.~~
 
 ### API Endpoint:
-- ~~Buatlah sebuah API endpoint yang memungkinkan pengguna untuk melihat
+- Buatlah sebuah API endpoint yang memungkinkan pengguna untuk melihat
 daftar buku dalam format JSON. Endpoint ini harus memberikan respons
-dengan data buku yang sesuai.~~
+dengan data buku yang sesuai.
 

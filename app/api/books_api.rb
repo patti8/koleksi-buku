@@ -11,11 +11,11 @@ module BooksApi
         requires :tahun_terbit, type: String, desc: 'The genre of the book'
         requires :author_id, type: Integer, desc: 'The ID of the author'
       end
-      post do
+      post "/sds" do
         # Create the book with the provided parameters
         book = Book.new({
           juul: params[:judul],
-          genre: params[:tahun_terbit],
+          tahun_terbit: params[:tahun_terbit],
           author_id: params[:author_id]
         })
 

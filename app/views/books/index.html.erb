@@ -1,13 +1,15 @@
-<div data-controller="hello" class="grid grid-cols-1 gap-6">
+<div data-controller="book" class="grid grid-cols-1 gap-6">
     
     <div class="grid grid-cols-2">
         <p class="text-4xl text-gray-900 dark:text-white">Koleksi Buku</p>
 
-        <button type="button" data-modal-target="static-modal" data-modal-toggle="static-modal" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Tambah Buku</button>
+        <button data-action="click->book#showModal" type="button" data-modal-target="static-modal" data-modal-toggle="static-modal" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Tambah Buku</button>
         <%= render "modal_form" %>
     </div>
 
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg mb-5">
+        <%= will_paginate @books %>
+
         <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
@@ -41,6 +43,8 @@
             
             </tbody>
         </table>
+
+        <%= will_paginate @books %>
     </div>
 
 

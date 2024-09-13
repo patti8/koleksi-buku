@@ -1,7 +1,7 @@
 module BooksHelper
 
-  def self.penulis
-    Author.all.select(:nama)
+  def penulis
+    Author.all
   end
 
 end
