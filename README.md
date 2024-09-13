@@ -24,27 +24,33 @@ dalam database.~~
 - ~~Setelah buku dibuat, pengguna harus diarahkan kembali ke halaman daftar
 buku.~~
 
-### Background Job:
-- Buatlah sebuah background job dengan menggunakan gem Sidekiq atau
+### ~~Background Job (using sidekiq):~~
+- ~~Buatlah sebuah background job dengan menggunakan gem Sidekiq atau
 Delayed::Job. Job ini harus mengirim email kepada pengguna setelah mereka
-membuat buku baru.
-- Gunakan konsep pengiriman email asinkron untuk tugas ini.
+membuat buku baru.~~
+- ~~Gunakan konsep pengiriman email asinkron untuk tugas ini.~~
+![alt text](image.png)
 
 ### ~~Testing~~:
 - ~~Buatlah beberapa pengujian unit untuk model Book. Pastikan untuk menguji
 validasi, hubungan model, dan method lain yang relevan dalam model
 tersebut~~
 
-### Autentikasi dan Otorisasi:
-- Implementasikan autentikasi dengan menggunakan gem Devise. Setelahnya,
+### ~~Autentikasi dan Otorisasi:~~
+- ~~Implementasikan autentikasi dengan menggunakan gem Devise. Setelahnya,
 buatlah filter atau tindakan dalam kontroler yang membatasi akses ke tindakan
-tertentu hanya untuk pengguna yang sudah login.
+tertentu hanya untuk pengguna yang sudah login.~~
 
 ### ~~Pagination:~~
 - ~~Jika daftar buku dalam halaman daftar buku menjadi terlalu panjang, implementasikan pagination untuk membaginya ke beberapa halaman.~~
 
-### API Endpoint:
-- Buatlah sebuah API endpoint yang memungkinkan pengguna untuk melihat
+### ~~API Endpoint:~~
+- ~~Buatlah sebuah API endpoint yang memungkinkan pengguna untuk melihat
 daftar buku dalam format JSON. Endpoint ini harus memberikan respons
-dengan data buku yang sesuai.
+dengan data buku yang sesuai.~~
+
+contoh endpoint:
+```
+http://localhost:3000/api/books.json?show_all=true
+```
 

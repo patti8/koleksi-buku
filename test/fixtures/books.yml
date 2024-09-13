@@ -1,11 +1,11 @@
 # test/fixtures/books.yml
 
-one:
-  judul: "The Philosopher's Stone"
-  tahun_terbit: 1997
-  author: one_author
+# one:
+#   judul: "The Philosopher's Stone"
+#   tahun_terbit: 1997
+#   author: one_author
 
-two:
-  judul: "The Chamber of Secrets"
-  tahun_terbit: 1998
-  author: two_author
+# two:
+#   judul: "The Chamber of Secrets"
+#   tahun_terbit: 1998
+#   author: two_author

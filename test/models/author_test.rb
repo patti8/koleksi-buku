@@ -33,10 +33,10 @@ class AuthorTest < ActiveSupport::TestCase
   test "nama should not be too short or too long" do
     @author.nama = "AB"
     assert_not @author.valid?, "Author is valid with a nama that is too short"
-    assert_includes @author.errors[:nama], "is too short (minimum is 3 characters)"
+    assert_includes @author.errors[:nama], "harus lebih dari 3 karakter dan maksimal 100 karakter"
 
     @author.nama = "A" * 101
     assert_not @author.valid?, "Author is valid with a nama that is too long"
-    assert_includes @author.errors[:nama], "is too long (maximum is 100 characters)"
+    assert_includes @author.errors[:nama], "harus lebih dari 3 karakter dan maksimal 100 karakter"
   end
 end

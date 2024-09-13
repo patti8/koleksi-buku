@@ -28,15 +28,15 @@ class BookTest < ActiveSupport::TestCase
   test "tahun_terbit should be valid" do
     @book.tahun_terbit = "invalid"
     assert_not @book.valid?, "Book is valid with non-numeric tahun terbit"
-    assert_includes @book.errors[:tahun_terbit], "is not a number"
+    assert_includes @book.errors[:tahun_terbit], "harus angka"
 
     @book.tahun_terbit = -1
     assert_not @book.valid?, "Book is valid with negative tahun_terbit"
-    assert_includes @book.errors[:tahun_terbit], "must be greater than 0"
+    assert_includes @book.errors[:tahun_terbit], "harus angka"
 
     @book.tahun_terbit = Time.now.year + 1
     assert_not @book.valid?, "Book is valid with future tahun_terbit"
-    assert_includes @book.errors[:tahun_terbit], "must be less than or equal to #{Time.now.year}"
+    assert_includes @book.errors[:tahun_terbit], "tidak boleh lebih dari tahun sekarang"
   end
 
   # Test relasi dengan author

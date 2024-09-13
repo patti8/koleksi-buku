@@ -2,7 +2,8 @@ require "test_helper"
 
 class UserTest < ActiveSupport::TestCase
   def setup
-    @user = User.new(email: "valid@example.com", username: "validuser")
+    fake_password = Faker::Internet.password(min_length: 8, max_length: 12, mix_case: true, special_characters: true)
+    @user = User.new(email: "valid2@example.com", username: "validuser", password: fake_password, password_confirmation: fake_password)
   end
 
   # Uji validasi email yang valid

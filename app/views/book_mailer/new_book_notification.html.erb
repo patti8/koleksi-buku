@@ -1,0 +1,9 @@
+<h1>Hai <%= @user.username %>! 👋</h1>
+<p>Buku baru berjudul "<strong><%= @book.judul %></strong>" telah dibuat! 📚✨</p>
+<p>Detail buku:</p>
+<ul>
+  <li><strong>Judul:</strong> <%= @book.judul %></li>
+  <li><strong>Tahun Terbit:</strong> <%= @book.tahun_terbit %></li>
+  <li><strong>Penulis:</strong> <%= @book.author.nama %></li>
+</ul>
+

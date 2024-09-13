@@ -9,9 +9,12 @@
 
     <div class="grid grid-cols-2">
         <button data-action="click->book#showModal" type="button" data-modal-target="static-modal" data-modal-toggle="static-modal" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Tambah Buku</button>
-        <%= link_to destroy_user_session_path, method: :get, class: "text-center text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800" do %>
-            Keluar (<b><%= current_user.username%></b>)
+        <%= link_to (current_user.present? ? destroy_user_session_path : new_user_session_path), 
+            method: current_user.present? ? :delete : :get, 
+            class: "text-center text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800" do %>
+            <b><%= current_user.present? ? "Keluar (#{current_user.username})" : "Login" %></b>
         <% end %>
+
 
     </div>
 
