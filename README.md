@@ -18,11 +18,11 @@ ada.~~
 - ~~Lalu, buat tampilan (view) yang menampilkan daftar buku dalam format tabel~~
 
 ### Form Handling:
-- Buatlah sebuah form untuk membuat buku baru. Form ini harus memiliki field
+- ~~Buatlah sebuah form untuk membuat buku baru. Form ini harus memiliki field
 untuk judul, tahun terbit, dan pilihan penulis dari daftar penulis yang ada
-dalam database.
-- Setelah buku dibuat, pengguna harus diarahkan kembali ke halaman daftar
-buku.
+dalam database.~~
+- ~~Setelah buku dibuat, pengguna harus diarahkan kembali ke halaman daftar
+buku.~~
 
 ### Background Job:
 - Buatlah sebuah background job dengan menggunakan gem Sidekiq atau
@@ -30,10 +30,10 @@ Delayed::Job. Job ini harus mengirim email kepada pengguna setelah mereka
 membuat buku baru.
 - Gunakan konsep pengiriman email asinkron untuk tugas ini.
 
-### Testing:
-- Buatlah beberapa pengujian unit untuk model Book. Pastikan untuk menguji
+### ~~Testing~~:
+- ~~Buatlah beberapa pengujian unit untuk model Book. Pastikan untuk menguji
 validasi, hubungan model, dan method lain yang relevan dalam model
-tersebut.
+tersebut~~
 
 ### Autentikasi dan Otorisasi:
 - Implementasikan autentikasi dengan menggunakan gem Devise. Setelahnya,

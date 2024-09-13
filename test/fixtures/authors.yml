@@ -1,7 +1,7 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# test/fixtures/authors.yml
 
-one:
-  nama: MyString
+one_author:
+  nama: "J.K. Rowling"
 
-two:
-  nama: MyString
+two_author:
+  nama: "George Orwell"

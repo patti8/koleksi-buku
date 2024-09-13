@@ -1,9 +1,11 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# test/fixtures/books.yml
 
 one:
-  title: MyString
-  description: MyString
+  judul: "The Philosopher's Stone"
+  tahun_terbit: 1997
+  author: one_author
 
 two:
-  title: MyString
-  description: MyString
+  judul: "The Chamber of Secrets"
+  tahun_terbit: 1998
+  author: two_author

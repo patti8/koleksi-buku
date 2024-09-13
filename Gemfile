@@ -75,3 +75,5 @@ gem "grape", "~> 2.1"
 gem "will_paginate", "~> 4.0"
 
 gem "devise", "~> 4.9"
+
+gem "sidekiq", "~> 7.3"
